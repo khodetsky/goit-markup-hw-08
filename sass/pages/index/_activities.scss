@@ -1,4 +1,8 @@
 .activities {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+
   &__list {
     list-style-type: none;
     display: flex;
