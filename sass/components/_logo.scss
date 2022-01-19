@@ -1,0 +1,14 @@
+.logo {
+  display: inline-flex;
+
+  color: $header-color;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+
+  &__blue-text {
+    color: $accent-color;
+  }
+}
