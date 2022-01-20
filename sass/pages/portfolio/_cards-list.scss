@@ -1,10 +1,20 @@
 .cards-list {
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 94px;
+  }
 
   &__image {
     display: block;
+    width: 100%;
   }
 
   &__border {
@@ -33,9 +43,14 @@
   }
 }
 
+.tablet-border {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 56px;
+  }
+}
+
 .cards-list__item {
-  width: 370px;
-  margin-right: 30px;
+  margin-bottom: 30px;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -46,12 +61,38 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
-  &:nth-child(3n) {
-    margin-right: 0;
+  &:last-child {
+    margin-bottom: 0;
   }
 
-  &:nth-child(n + 4) {
-    margin-top: 30px;
+  &:nth-child(2n + 1) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-left: 0;
+    }
+  }
+
+  &:nth-child(3n + 1) {
+    @media screen and (min-width: 1200px) {
+      margin-left: 0;
+    }
+  }
+
+  &:nth-child(n + 6) {
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 2 * 30px) / 3);
   }
 }
 
@@ -74,7 +115,7 @@
     height: 100%;
     background-color: rgba(33, 150, 243, 0.9);
 
-    transform: translateY(100%);
+    transform: translateY(110%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -94,7 +135,7 @@
   padding-right: 24px;
   position: absolute;
 
-  transform: translateY(150%);
+  transform: translateY(180%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   .cards-list__item:hover &,
@@ -102,3 +143,108 @@
     transform: translateY(0);
   }
 }
+
+// .cards-list {
+//   list-style-type: none;
+//   display: flex;
+//   flex-wrap: wrap;
+
+//   &__image {
+//     display: block;
+//   }
+
+//   &__border {
+//     padding-left: 24px;
+//     padding-right: 24px;
+//     padding-bottom: 20px;
+
+//     border-left: 1px solid #eeeeee;
+//     border-right: 1px solid #eeeeee;
+//     border-bottom: 1px solid #eeeeee;
+//   }
+
+//   &__title {
+//     margin-bottom: 4px;
+//     padding-top: 20px;
+
+//     color: $header-color;
+//     font-size: 18px;
+//     line-height: 2;
+//     letter-spacing: 0.06em;
+//   }
+
+//   &__text {
+//     font-size: 16px;
+//     line-height: 1.87;
+//   }
+// }
+
+// .cards-list__item {
+//   width: 370px;
+//   margin-right: 30px;
+
+//   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:hover,
+//   &:focus {
+//     cursor: pointer;
+//     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+//       1px 4px 6px rgba(0, 0, 0, 0.16);
+//   }
+
+//   &:nth-child(3n) {
+//     margin-right: 0;
+//   }
+
+//   &:nth-child(n + 4) {
+//     margin-top: 30px;
+//   }
+// }
+
+// .cards-list__overlay {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   position: relative;
+//   overflow: hidden;
+
+//   &::before {
+//     position: absolute;
+//     display: inline-block;
+//     content: "";
+
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-color: rgba(33, 150, 243, 0.9);
+
+//     transform: translateY(100%);
+//     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+
+//   .cards-list__item:hover &::before,
+//   .cards-list__item:focus &::before {
+//     transform: translateY(0);
+//   }
+// }
+
+// .cards-list__description {
+//   color: $white-text-color;
+//   font-size: 18px;
+//   line-height: 1.55;
+
+//   display: inline-block;
+//   padding-left: 24px;
+//   padding-right: 24px;
+//   position: absolute;
+
+//   transform: translateY(150%);
+//   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   .cards-list__item:hover &,
+//   .cards-list__item:focus & {
+//     transform: translateY(0);
+//   }
+// }
