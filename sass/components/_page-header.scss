@@ -198,11 +198,6 @@
   }
 }
 
-//
-//
-//
-//
-
 @media screen and (max-width: 767px) {
   .mobile-menu {
     opacity: 0;
@@ -261,7 +256,7 @@
   &--open {
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 15px;
   }
 
   @media screen and (min-width: 768px) {
