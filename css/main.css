@@ -1487,6 +1487,7 @@ img {
   .modal {
     max-width: 528px;
     max-height: 581px;
+    overflow-y: visible;
   }
 }
 
