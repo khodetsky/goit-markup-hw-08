@@ -166,11 +166,12 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__item">
-                        <img alt="мужчина" class="team__image"
-                        srcset="./images/igor-450.jpg 450w,
-                        ./images/igor-900.jpg 900w"
-                        src="./images/igor-450.jpg"
-                        sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" >
+                        <picture>
+                            <source srcset="./images/igor-450.jpg 1x, ./images/igor-900.jpg 2x" media="(max-width: 767px)"/>
+                            <source srcset="./images/igor-354.jpg 1x, ./images/igor-708.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)"/>
+                            <source srcset="./images/igor-270.jpg 1x, ./images/igor-540.jpg 2x" media="(min-width: 1200px)"/>
+                            <img alt="мужчина" class="team__image" src="./images/igor-450.jpg"/>
+                        </picture>
                         <h3 class="team__subtitle">Игорь Демьяненко</h3>
                         <p lang="en" class="team__text">Product Designer</p>
                         <ul class="social-list team__social-list">
@@ -205,11 +206,12 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img alt="женщина" class="team__image"
-                        srcset="./images/olga-450.jpg 450w,
-                        ./images/olga-900.jpg 900w"
-                        src="./images/olga-450.jpg"
-                        sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw">
+                        <picture>
+                            <source srcset="./images/olga-450.jpg 1x, ./images/olga-900.jpg 2x" media="(max-width: 767px)">
+                            <source srcset="./images/olga-354.jpg 1x, ./images/olga-708.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)">
+                            <source srcset="./images/olga-270.jpg 1x, ./images/olga-540.jpg 2x" media="(min-width: 1200px)">
+                            <img alt="женщина" class="team__image" src="./images/olga-450.jpg">
+                        </picture>
                         <h3 class="team__subtitle">Ольга Репина</h3>
                         <p lang="en" class="team__text">Frontend Developer</p>
                         <ul class="social-list team__social-list">
@@ -244,11 +246,12 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img alt="мужчина" class="team__image"
-                        srcset="./images/nikolay-450.jpg 450w,
-                        ./images/nikolay-900.jpg 900w"
-                        src="./images/nikolay-450.jpg"
-                        sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw">
+                        <picture>
+                            <source srcset="./images/nikolay-450.jpg 1x, ./images/nikolay-900.jpg 2x" media="(max-width: 767px)">
+                            <source srcset="./images/nikolay-354.jpg 1x, ./images/nikolay-708.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)">
+                            <source srcset="./images/nikolay-270.jpg 1x, ./images/nikolay-540.jpg 2x" media="(min-width: 1200px)">
+                            <img alt="мужчина" class="team__image" src="./images/nikolay-450.jpg">
+                        </picture>
                         <h3 class="team__subtitle">Николай Тарасов</h3>
                         <p lang="en" class="team__text">Marketing</p>
                         <ul class="social-list team__social-list">
@@ -283,11 +286,12 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img alt="мужчина" class="team__image"
-                        srcset="./images/mihail-450.jpg 450w,
-                        ./images/mihail-900.jpg 900w"
-                        src="./images/mihail-450.jpg"
-                        sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw">
+                        <picture>
+                            <source srcset="./images/mihail-450.jpg 1x, ./images/mihail-900.jpg 2x" media="(max-width: 767px)">
+                            <source srcset="./images/mihail-354.jpg 1x, ./images/mihail-708.jpg 2x" media="(min-width: 768px) and (max-width: 1199px)">
+                            <source srcset="./images/mihail-270.jpg 1x, ./images/mihail-540.jpg 2x" media="(min-width: 1200px)">
+                            <img alt="мужчина" class="team__image" src="./images/mihail-450.jpg">
+                        </picture>
                         <h3 class="team__subtitle">Михаил Ермаков</h3>
                         <p lang="en" class="team__text">UI Designer</p>
                         <ul class="social-list team__social-list">
